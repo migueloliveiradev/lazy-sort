@@ -1,0 +1,26 @@
+{
+  "name": "lazy-sort",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --import tsx --test src/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migueloliveiradev/lazy-sort.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/migueloliveiradev/lazy-sort/issues"
+  },
+  "homepage": "https://github.com/migueloliveiradev/lazy-sort#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
