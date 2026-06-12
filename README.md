@@ -25,7 +25,7 @@ const data = [
 
 const sorted = await sort(data, 'age');
 
-console.log(sortedArray);
+console.log(sorted);
 // Output: [
 //   { name: 'Ana', age: 10 },
 //   { name: 'Bruno', age: 50 },
@@ -46,7 +46,7 @@ const data = [
 
 const sorted = await sort(data, 'name', 'createdAt');
 
-console.log(sortedArray);
+console.log(sorted);
 // Output: [
 //   { name: 'Alice', createdAt: '2023-11-10T09:15:00.000Z' },
 //   { name: 'Alice', createdAt: '2024-01-20T14:30:00.000Z' },
