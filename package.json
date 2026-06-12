@@ -1,18 +1,20 @@
 {
   "name": "lazy-sort",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "A lazy sorting algorithm for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "node --import tsx --test src/**/*.test.ts"
+    "test": "node --import tsx --test src/**/*.test.ts",
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/migueloliveiradev/lazy-sort.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["sorting", "lazy", "sort", "algorithm"],
+  "author": "migueloliveiradev",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/migueloliveiradev/lazy-sort/issues"

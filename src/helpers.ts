@@ -39,7 +39,7 @@ export function calculateSortingDelay<T extends object>(
 ): number {
   return params.reduce((accumulatedDelay, currentParam, index) => {
     const rawValue = getNestedValue(item, currentParam);
-    const numericValue = normalizeToNumeric(rawValue) / 1_000_000_000;
+    const numericValue = normalizeToNumeric(rawValue);
 
     const weight = Math.pow(100000, params.length - 1 - index);
 
