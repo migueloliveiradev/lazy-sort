@@ -1,8 +1,8 @@
 {
   "name": "lazy-sort",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lazy sorting algorithm for JavaScript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "node --import tsx --test src/**/*.test.ts",
     "build": "tsc",
