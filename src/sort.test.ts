@@ -7,7 +7,7 @@ describe('lazy-sort', () => {
     t.mock.timers.enable({ apis: ['setTimeout'] });
 
     const promise = sort([], 'age' as any);
-    t.mock.timers.tick(9999999);
+    t.mock.timers.tick(Number.MAX_VALUE);
 
     const result = await promise;
 
@@ -24,7 +24,7 @@ describe('lazy-sort', () => {
     ];
 
     const promise = sort(data, 'age');
-    t.mock.timers.tick(9999999);
+    t.mock.timers.tick(Number.MAX_VALUE);
 
     const result = await promise;
 
@@ -45,7 +45,7 @@ describe('lazy-sort', () => {
     ];
 
     const promise = sort(data, 'user.level');
-    t.mock.timers.tick(9999999);
+    t.mock.timers.tick(Number.MAX_VALUE);
 
     const result = await promise;
 
@@ -66,7 +66,7 @@ describe('lazy-sort', () => {
     ];
 
     const promise = sort(data, 'name');
-    t.mock.timers.tick(9999999);
+    t.mock.timers.tick(Number.MAX_VALUE);
 
     const result = await promise;
 
@@ -88,7 +88,7 @@ describe('lazy-sort', () => {
     ];
 
     const promise = sort(data, 'name', 'createdAt');
-    t.mock.timers.tick(9999999);
+    t.mock.timers.tick(Number.MAX_VALUE);
 
     const result = await promise;
 
